@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions League</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+    .grid-contenedor{
+        display: grid;
+        grid-template-columns: 20% 70% 10%;
+        grid-template-rows: 10% 90% ;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: "Encabezado Encabezado Encabezado"
+                              "Barra Contenido PiePagina";
+
+    }
+
+    .uno{
+        position: sticky;
+        border: black  solid;
+        background-color: black; 
+        grid-area:  Encabezado; 
+        color: white;  
+    }
+
+    .dos{
+        border: black  solid;
+        background-color: green;
+        grid-area: Barra;
+    }
+
+    .tres{
+        border: black  solid;
+        background-color: yellow;
+        grid-area: Contenido;
+    }
+
+    .cuatro{
+        border: black solid;
+        background-color: blue;
+        grid-area: PiePagina;
+    }
+
+    #img1 {
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+    }
+    #img2 {
+        float: right;
+        top: 0;
+        left: 0;
+        width: 70px;
+        height: 60px;
+    }
+
+</style>
+</head>
+
+
+<body>
+<div class="grid-contenedor">
+    <div class="uno">
+        <img id="img1" src="Imagenes/UEFALOGO.png" alt="Logo">
+        <img id="img2" src="Imagenes/COPAUEFA.jpg" alt="COPAUEFA">
+    </div>
+    <div class="dos">
+
+    </div>
+    <div class="tres">
+
+    </div>
+    <div class="cuatro">
+
+    </div>
+
+</div>
+    
+</body>
+</html>
