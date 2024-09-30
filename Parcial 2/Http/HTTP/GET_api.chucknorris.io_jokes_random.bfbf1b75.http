@@ -1,0 +1,24 @@
+HTTP/1.1 200 OK
+cf-cache-status: DYNAMIC
+cf-ray: 8cb5fb256b4529c9-LAX
+connection: keep-alive
+content-encoding: br
+content-type: application/json
+date: Mon, 30 Sep 2024 17:37:28 GMT
+nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+report-to: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727717848&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=u0cRqF5wrnnmRSzczaj6mpLIdCg4kX%2BaPRAiP%2FeMbyU%3D"}]}
+reporting-endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727717848&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=u0cRqF5wrnnmRSzczaj6mpLIdCg4kX%2BaPRAiP%2FeMbyU%3D
+server: cloudflare
+transfer-encoding: chunked
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+via: 1.1 vegur
+
+{
+  "categories": [],
+  "created_at": "2020-01-05 13:42:24.696555",
+  "icon_url": "https://api.chucknorris.io/img/avatar/chuck-norris.png",
+  "id": "tYl0eVp8R4mFlttOpocKPQ",
+  "updated_at": "2020-01-05 13:42:24.696555",
+  "url": "https://api.chucknorris.io/jokes/tYl0eVp8R4mFlttOpocKPQ",
+  "value": "Steven Seagal once invited Chuck Norris over to his house and challenged him to a game billiards. Chuck Norris easily won by simply racking his balls for him."
+}

@@ -1,0 +1,14 @@
+HTTP/1.1 301 Moved Permanently
+cache-control: max-age=3600
+cf-ray: 8cb5fb229bb1cb9b-LAX
+connection: keep-alive
+content-length: 167
+content-type: text/html
+date: Mon, 30 Sep 2024 17:37:27 GMT
+expires: Mon, 30 Sep 2024 18:37:27 GMT
+location: https://api.chucknorris.io/jokes/random
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=nvrS1NWOzcRO3pwzKpfRUl2LVQulUa6UQV3lqRD6ghOFvvNVrgxBXZvdQ6%2BkhKcOyngvddyBiea7rUr2diGJFjVBHKCT5P8VnoCaalaxtecshhVTB5BLzVjreoiAKLqUOHzuAzM%3D"}],"group":"cf-nel","max_age":604800}
+server: cloudflare
+speculation-rules: "/cdn-cgi/speculation"
+vary: Accept-Encoding
