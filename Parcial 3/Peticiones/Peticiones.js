@@ -19,6 +19,7 @@ app.get('/estudiantes/:carrera',(req,res)=>{
     console.log(req.query.control)
     res.send('Servidor contestando a peticion params GET')
 });
+//localhost:8000/estudiantes/sistemas?control=22100235
 
 app.listen(8000,()=>{
     console.log(`Escuchando en el puerto : ${8000}`)
