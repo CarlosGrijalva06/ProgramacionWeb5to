@@ -1,30 +1,26 @@
-const express = require('express');
-const path = require('path');
+const express = require ("express");
 const app = express();
-
-console.log(__dirname);
-console.log(__filename);
-
 app.use(express.json());
+app.use(express.text());
 
-app.set('view engine', 'pug');
-app.set('views',path.join(__dirname,'views'));
 
 app.get('/administracion',(req,res)=>{
     console.log(req.query)
-    res.send('Servidor contestando a peticion query GET')
-    res.render('admin');
+    //res.send('Servidor contestando a peticion query GET')
+    res.render('admin')
 });
 
 app.get('/maestros',(req,res)=>{
     console.log(req.body)
-    res.send('Servidor constestando a peticion body GET')
+    //res.send('Servidor constestando a peticion body GET')
+    res.render('maestros')
 });
 
 app.get('/estudiantes/:carrera',(req,res)=>{
     console.log(req.params.carrera)
     console.log(req.query.control)
-    res.send('Servidor contestando a peticion params GET')
+    //res.send('Servidor contestando a peticion params GET')
+    res.render(estudiante)
 });
 //localhost:8000/estudiantes/sistemas?control=22100235
 
