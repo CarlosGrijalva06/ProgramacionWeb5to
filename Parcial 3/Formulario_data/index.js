@@ -94,6 +94,6 @@ app.post(
   );
   
 
-app.listen(2000, () => {
-    console.log(`Servidor corriendo en http://localhost:2000`);
+app.listen(3000, () => {
+    console.log(`Servidor corriendo en http://localhost:3000`);
 });
