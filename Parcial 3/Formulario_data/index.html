@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="miForm" enctype="multipart/form-data">
+    <form id="miForm" enctype="multipart/Formulario_data">
 
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -35,7 +35,7 @@
           const formData = new FormData(formElement); 
       
           try {
-            const response = await fetch('http://localhost:2000/usuario', {
+            const response = await fetch('http://localhost:3000/usuario', {
               method: 'POST',
               body: formData,
             });
