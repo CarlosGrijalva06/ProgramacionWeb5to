@@ -50,7 +50,7 @@ app.post(
       if (result.isEmpty()) {
         const { nombre, edad, correo } = req.body;
         const imagenPath = req.file ? req.file.path : null;
-  
+  //generar pdf
         const doc = new jsPDF();
   
         const Ancho = doc.internal.pageSize.getWidth();
@@ -84,6 +84,7 @@ app.post(
         const pdfData = doc.output(); 
         res.setHeader('Content-Type', 'application/pdf');
         res.send(Buffer.from(pdfData, 'binary'));
+        //
       } else {
         res.status(400).json({ errors: result.array() });
         if (req.file) {
