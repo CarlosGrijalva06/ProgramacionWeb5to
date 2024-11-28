@@ -62,7 +62,8 @@ app.post('/equipos', async (req, res) => {
   res.setHeader('Content-Disposition', `attachment; filename=${pdfFileName}`);
 
   res.sendFile(pdfFilePath);
-  res.send({ message: 'Equipo creado' });
+  
+  // res.send({ message: 'Equipo creado' });
 });
 
 app.put('/equipos/:id', async (req, res) => {

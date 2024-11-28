@@ -148,7 +148,7 @@
       const blob = await resp.blob(); // Obtener el PDF como blob
       const pdfURL = window.URL.createObjectURL(blob);
 
-      // Intentar abrir el PDF en una nueva ventana
+ 
       const newWindow = window.open(pdfURL, '_blank');
       if (!newWindow) {
         console.log("La ventana emergente fue bloqueada");
