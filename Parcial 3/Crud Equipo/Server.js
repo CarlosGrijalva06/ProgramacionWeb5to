@@ -70,7 +70,7 @@ app.put('/equipos/:id', async (req, res) => {
   const { id } = req.params;
   const { nombre_equipo, ciudad, fundacion, colores, estadio, titulos } = req.body;
   await db.query('UPDATE equipos SET nombre_equipo = ?, ciudad = ?, fundacion = ?, colores = ?, estadio = ?, titulos = ? WHERE id_equipo = ?', [nombre_equipo, ciudad, fundacion, colores, estadio, titulos, id]);
-  res.send({ message: 'Equipo actualizado' });
+  res.send({ message: 'Equipo eliminado' });
 });
 
 app.delete('/equipos/:id', async (req, res) => {
